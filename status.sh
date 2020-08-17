@@ -6,7 +6,7 @@ export PATH
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: ServerStatus client + server
 #	Version: Test v0.008
-#	Author: Toyo,Modify by CokeMine
+#	Author: Toyo,Modify by Will
 #=================================================
 
 sh_ver="0.0.1"
@@ -844,7 +844,7 @@ Uninstall_ServerStatus_server(){
 		rm -rf "/etc/init.d/status-server"
 		if [[ -e "/etc/init.d/caddy" ]]; then
 			/etc/init.d/caddy stop
-			wget -N --no-check-certificate https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/caddy/caddy_install.sh
+			wget -N --no-check-certificate https://raw.githubusercontent.com/WilliamNGB/ServerStatus-Hotaru/master/caddy/caddy_install.sh
 			chmod +x caddy_install.sh
 			bash caddy_install.sh uninstall
 			rm -rf caddy_install.sh
